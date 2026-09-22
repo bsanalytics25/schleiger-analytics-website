@@ -1,0 +1,75 @@
+/* Preserve the complete image instead of cropping it to a square. */
+.founder-photo img {
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: initial;
+}
+
+.split article .founder-photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.split article > h2 {
+  text-align: center;
+}
+
+article p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+aside p {
+  line-height: 1.6;
+}
+
+/* The mission paragraph is followed by additional callout content. */
+.callout > p:not(.eyebrow) {
+  color: #d8e6f0;
+}
+
+/* Keep the existing mission callout compact in the right grid column. */
+.split .callout {
+  grid-column: auto;
+  width: auto;
+}
+
+.capabilities,
+.engagement-style,
+.typical-outcomes {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+.capabilities .eyebrow,
+.engagement-style .eyebrow,
+.typical-outcomes .eyebrow {
+  margin-bottom: .6rem;
+}
+
+.capabilities ul,
+.engagement-style ul,
+.typical-outcomes ul {
+  display: grid;
+  gap: .45rem;
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #d8e6f0;
+  font-size: .9rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 20;
+  padding: .55rem .8rem;
+  background: var(--navy);
+  color: white;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
