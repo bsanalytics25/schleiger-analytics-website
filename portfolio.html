@@ -1,5 +1,142 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portfolio | Schleiger Analytics</title><link rel="stylesheet" href="css/styles.css"><script src="js/main.js" defer></script></head><body>
-<header><div class="nav container"><a class="brand" href="index.html"></b> Schleiger Analytics</a><button class="menu" aria-expanded="false" aria-controls="links">Menu</button><nav id="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a class="active" href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a></nav></div></header>
-<main><section class="page-head"><div class="container"><p class="eyebrow">PORTFOLIO</p><h1>Case studies in progress.</h1><p>A preview of the practical utility analytics engagements we will document here.</p></div></section><section class="section container projects"><article><div class="placeholder">DASHBOARD PREVIEW</div><div><p class="eyebrow">FUTURE CASE STUDY 01</p><h2>Operations performance dashboard</h2><dl><dt>Problem</dt><dd>Fragmented operational reporting slowed visibility into key utility performance measures.</dd><dt>Approach</dt><dd>Consolidate source data into a shared reporting model.</dd><dt>Tools</dt><dd>Azure, SQL, Power BI</dd><dt>Outcome</dt><dd>A future case study will outline improved reporting consistency and faster insight.</dd></dl></div></article><article><div class="placeholder architecture">PIPELINE ARCHITECTURE</div><div><p class="eyebrow">FUTURE CASE STUDY 02</p><h2>Cloud data pipeline modernization</h2><dl><dt>Problem</dt><dd>Manual, disconnected processes made it difficult to scale recurring data preparation.</dd><dt>Approach</dt><dd>Define a repeatable cloud pipeline with monitoring and documented transformations.</dd><dt>Tools</dt><dd>AWS or Azure, Python, SQL</dd><dt>Outcome</dt><dd>A future case study will share the foundation for dependable analytics.</dd></dl></div></article></section></main>
-<footer><div class="container">© 2026 Schleiger Analytics LLC <span>Utility analytics consulting</span></div></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Utility and telecom analytics consulting for SCADA data, Python automation, Power BI reporting, forecasting, and operational decision support.">
+  <title>Utility &amp; Telecom Analytics Portfolio | Schleiger Analytics</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="nav container">
+      <a class="brand" href="index.html">Schleiger Analytics</a>
+      <button class="menu" aria-expanded="false" aria-controls="links">Menu</button>
+      <nav id="links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a class="active" aria-current="page" href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-head portfolio-hero">
+      <div class="container">
+        <p class="eyebrow">UTILITY &amp; TELECOM ANALYTICS</p>
+        <h1>Utility &amp; Telecom Analytics That Turns Operational Data Into Decisions</h1>
+        <div class="portfolio-hero__copy">
+          <p>Schleiger Analytics helps utilities and telecommunications providers turn complex operational and customer data into analytics they can actually use.</p>
+          <p>My work combines Python automation, SCADA data processing, Power BI reporting, customer analytics, and forecasting to replace manual processes with repeatable analytics workflows and give operations and leadership teams clearer visibility into their business.</p>
+          <p>Projects are designed around practical implementation—not just analysis. The goal is to create tools and workflows organizations can continue using after the engagement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-selected-work">
+      <div class="container">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Analytics built around operational reality.</h2>
+        <p class="section-intro">Examples of analytics solutions developed around real operational, customer, and reporting challenges.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-case-studies" aria-label="Selected analytics projects">
+      <article class="case-study case-study--broadband">
+        <div class="container">
+          <header class="case-study__header">
+            <p class="eyebrow">BROADBAND ANALYTICS</p>
+            <h2>Pulse Fiber</h2>
+            <p class="case-study__title">Customer Segmentation &amp; Revenue Forecasting</p>
+          </header>
+          <div class="case-study__grid">
+            <div class="case-study__narrative">
+              <section><h3>Challenge</h3><p>Pulse Fiber needed better visibility into customer behavior, churn risk, and future revenue trends. Traditional reporting could describe what had already happened but provided limited insight into customer segments and emerging risks.</p></section>
+              <section><h3>Solution</h3><p>Developed a Python-based analytics workflow that segmented customers based on behavioral and account characteristics, identified indicators associated with churn, and produced revenue forecasts for planning and management analysis.</p><p>The analysis emphasized transparent methods that could be explained to operational and leadership teams rather than relying on an opaque black-box model.</p></section>
+            </div>
+            <aside class="case-study__support" aria-label="Pulse Fiber project details">
+              <section><h3>Capabilities</h3><ul class="portfolio-tags" aria-label="Pulse Fiber capabilities"><li>Python</li><li>Customer Segmentation</li><li>Churn Analytics</li><li>Revenue Forecasting</li><li>Data Preparation</li><li>Business Intelligence</li></ul></section>
+              <section><h3>Business Value</h3><p>Provided clearer customer segmentation, better visibility into potential churn risk, and a structured approach for evaluating future revenue performance.</p></section>
+            </aside>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study case-study--utility">
+        <div class="container">
+          <header class="case-study__header">
+            <p class="eyebrow">UTILITY OPERATIONS ANALYTICS</p>
+            <h2>City of Loveland</h2>
+            <p class="case-study__title">Automated SCADA Analytics Pipeline</p>
+          </header>
+          <div class="case-study__grid">
+            <div class="case-study__narrative">
+              <section><h3>Challenge</h3><p>Operational SCADA data from nine electrical substations needed to be transformed into consistent, usable information for reporting and operational analysis. Manual processing would make recurring reporting difficult to maintain and increase the risk of inconsistent data.</p></section>
+              <section><h3>Solution</h3><p>Developed an automated analytics pipeline that processes incoming SCADA data using Python, applies validation and transformation rules, and produces standardized datasets for Power BI Report Server reporting.</p><p>The workflow was designed to automate recurring data preparation and create a consistent foundation for operational analytics.</p></section>
+            </div>
+            <aside class="case-study__support" aria-label="City of Loveland project details">
+              <section><h3>Pipeline</h3><ol class="data-pipeline"><li>SCADA</li><li>Python ETL</li><li>Data Validation</li><li>Structured Dataset</li><li>Power BI Report Server</li></ol></section>
+              <section><h3>Capabilities</h3><ul class="portfolio-tags" aria-label="City of Loveland capabilities"><li>SCADA Analytics</li><li>Python</li><li>ETL Development</li><li>Data Validation</li><li>Automation</li><li>Power BI Report Server</li><li>Utility Operations Analytics</li></ul></section>
+              <section><h3>Business Value</h3><p>Automated recurring SCADA data processing, reduced manual reporting effort, standardized the underlying data, and improved access to operational information.</p></section>
+            </aside>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study case-study--stampd">
+        <div class="container">
+          <header class="case-study__header">
+            <p class="eyebrow">PRODUCT &amp; RECOMMENDATION SYSTEMS</p>
+            <h2>Stampd Social</h2>
+            <p class="case-study__title">Social Travel Logging &amp; Recommendation Platform</p>
+          </header>
+          <div class="case-study__grid">
+            <div class="case-study__narrative">
+              <section><h3>Project Focus</h3><p>Build a recommendation workflow that could use travel and social data to generate more relevant suggestions within a social travel platform.</p></section>
+              <section><h3>Solution</h3><p>Built a 30-feature recommendation system using PostgreSQL travel and social data with CatBoost ranking models. Developed a FastAPI inference microservice with versioned model deployment.</p><p>Integrated the serving layer into an AWS ECS and Terraform stack with CI/CD, container orchestration, and scalable runtime configuration.</p></section>
+            </div>
+            <aside class="case-study__support" aria-label="Stampd Social project details">
+              <section><h3>Capabilities</h3><ul class="portfolio-tags" aria-label="Stampd Social capabilities"><li>PostgreSQL</li><li>CatBoost Ranking</li><li>FastAPI</li><li>Model Deployment</li><li>AWS ECS</li><li>Terraform</li><li>CI/CD</li></ul></section>
+              <section><h3>Business Value</h3><p>Established a deployable recommendation platform that connects model ranking to a containerized runtime and repeatable infrastructure.</p></section>
+            </aside>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section portfolio-capabilities">
+      <div class="container">
+        <p class="eyebrow">CONSULTING CAPABILITIES</p>
+        <h2>How Schleiger Analytics Can Help</h2>
+        <p class="section-intro">Similar approaches can be applied across utility, municipal, broadband, and telecommunications environments where operational or customer data is difficult to access, analyze, or report consistently.</p>
+        <ul class="capability-list">
+          <li><h3>SCADA &amp; Operational Analytics</h3><p>Turn operational and SCADA data into structured datasets that support reporting, monitoring, and operational analysis.</p></li>
+          <li><h3>Python ETL &amp; Data Automation</h3><p>Replace repetitive data preparation with automated Python workflows for extracting, validating, transforming, and preparing data.</p></li>
+          <li><h3>Power BI &amp; Power BI Report Server</h3><p>Develop reporting workflows and dashboards that give operations and leadership teams clearer access to the information they need.</p></li>
+          <li><h3>Customer Segmentation &amp; Churn Analytics</h3><p>Analyze customer behavior, identify meaningful customer groups, and evaluate indicators associated with retention and churn.</p></li>
+          <li><h3>Revenue &amp; Operational Forecasting</h3><p>Develop transparent forecasting models that support planning, budgeting, capacity analysis, and management decisions.</p></li>
+          <li><h3>KPI Development &amp; Executive Reporting</h3><p>Translate operational data into understandable performance measures for managers, executives, and stakeholders.</p></li>
+          <li><h3>Data Validation &amp; Quality Monitoring</h3><p>Build repeatable checks that identify missing, inconsistent, or questionable data before it reaches reports and dashboards.</p></li>
+          <li><h3>Reporting Workflow Automation</h3><p>Reduce spreadsheet-heavy manual reporting by creating repeatable data pipelines and standardized reporting processes.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio-cta">
+      <div class="container">
+        <p class="eyebrow">START WITH THE WORKFLOW</p>
+        <h2>Have a Data Problem That Still Lives in Spreadsheets?</h2>
+        <p>Many analytics projects don't start with a request for artificial intelligence or a sophisticated forecasting model. They start with a much simpler problem: “We have the data, but getting useful information out of it takes too much work.”</p>
+        <p>That's the type of problem Schleiger Analytics is built to solve.</p>
+        <a class="button" href="contact.html">Let's Talk About Your Analytics Challenge</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">© 2026 Schleiger Analytics LLC</div></footer>
+</body>
+</html>
