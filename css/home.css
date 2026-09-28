@@ -1,0 +1,48 @@
+/* Homepage proof points: compact continuation of the shared site system. */
+.hero aside > strong:first-child { color: #fff; }
+.hero aside > strong:first-child + span { color: #d1e9f7; }
+
+.home-proof {
+  padding: 2.5rem 0 4.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.home-proof h2 {
+  max-width: 680px;
+}
+
+.proof-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1.5rem;
+  margin: 1.4rem 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.proof-list li {
+  color: var(--slate);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.proof-list li::before {
+  margin-right: .45rem;
+  color: var(--blue);
+  content: "•";
+}
+
+.text-link {
+  color: var(--blue);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .home-proof { padding: 2rem 0 3.5rem; }
+  .proof-list { display: grid; grid-template-columns: 1fr; gap: .45rem; }
+}
