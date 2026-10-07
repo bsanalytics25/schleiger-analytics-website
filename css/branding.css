@@ -1,0 +1,12 @@
+/* Shared header branding. */
+.site-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  height: 30px;
+  object-fit: contain;
+}
+
+@media (max-width: 760px) {
+  .site-logo { height: 28px; }
+}
