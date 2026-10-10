@@ -1,0 +1,33 @@
+/* Package pricing components; shared branding and typography remain unchanged. */
+.package-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; align-items: stretch; }
+.package-card { display: flex; flex-direction: column; min-width: 0; padding: 1.6rem; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.package-card--starter { border-color: var(--blue); box-shadow: inset 0 3px 0 var(--blue); }
+.package-card .eyebrow { margin: 0 0 .75rem; }
+.package-card h2 { font-size: 1.3rem; }
+.package-card h3 { margin: 1.5rem 0 .5rem; color: var(--navy); font-size: 1rem; line-height: 1.4; }
+.package-card p,.package-card li { color: var(--slate); }
+.package-price { margin: 1.25rem 0 .25rem; }
+.package-price strong { color: var(--navy); font-size: 2.5rem; line-height: 1.2; letter-spacing: -.03em; }
+.package-price span { display: block; font-size: .9rem; }
+.package-card .package-hours { margin: .75rem 0 1rem; color: var(--navy); font-weight: 700; }
+.package-card__intro > p:last-child { margin-bottom: 0; }
+.package-card ul { margin: 0; padding-left: 1.2rem; }
+.package-card li + li { margin-top: .45rem; }
+.package-card__details p { margin: .5rem 0 0; }
+.package-card__details { flex: 1; }
+.package-card__cta { margin-top: 1.75rem; text-align: center; min-height: 44px; }
+.package-disclosure { margin: 2rem 0 0; padding: 1.25rem; border-left: 3px solid var(--blue); background: var(--sky); color: var(--slate); }
+.package-inquiry-note { margin: .75rem 0 0; color: var(--slate); font-size: .9rem; }
+.custom-consulting { border-top: 1px solid var(--line); background: var(--sky); }
+.custom-consulting p { color: var(--slate); }
+.custom-consulting .callout h3 { margin: 0; color: #fff; font-size: 1.3rem; line-height: 1.4; }
+.custom-consulting .callout p:not(.eyebrow) { color: #d8e6f0; }
+.custom-consulting .callout .eyebrow { color: #9ed8ff; }
+.custom-consulting .callout .button { background: #fff; color: var(--navy); min-height: 44px; }
+.packages-skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 3; padding: .75rem 1rem; background: #fff; color: var(--navy); }
+.packages-skip-link:focus { top: 1rem; }
+.package-card__cta:focus-visible,.custom-consulting .button:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+@media (max-width: 1000px) {
+  .package-grid { grid-template-columns: 1fr; max-width: 680px; margin-inline: auto; }
+}
+
