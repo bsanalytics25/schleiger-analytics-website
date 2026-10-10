@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="assets/images/schleiger-analytics-logo.png">
   <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class="packages-page">
   <a class="packages-skip-link" href="#main-content">Skip to main content</a>
   <header><div class="nav container"><a class="brand" href="index.html"><img class="site-logo" src="assets/images/schleiger-analytics-logo.png" alt="Schleiger Analytics logo"><span>Schleiger Analytics</span></a><button class="menu" aria-expanded="false" aria-controls="links">Menu</button><nav id="links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a class="active" aria-current="page" href="packages.html">Packages</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
   <main id="main-content">
@@ -25,117 +25,77 @@
 
     <section class="section container" aria-label="One-time consulting packages">
       <div class="package-grid">
+        <!-- Internal scoping terms, unchanged: STARTER includes up to 8 consulting hours, subject to agreed scope. The Starter package covers the assessment of one defined workflow. It does not include implementing automation, building dashboards, integrating software systems, or developing custom applications. -->
         <article class="package-card package-card--starter" aria-labelledby="starter-title">
           <div class="package-card__intro">
             <p class="eyebrow">STARTER</p>
             <h2 id="starter-title">Workflow Assessment</h2>
             <p class="package-price"><strong>$480</strong> <span>one-time</span></p>
-            <p class="package-hours">Includes up to 8 consulting hours</p>
-            <p>Understand where your reporting and data workflows can be improved before investing in larger changes.</p>
+            <p class="package-benefit">Find opportunities to improve your reporting.</p>
           </div>
-          <div class="package-card__details">
-            <h3>What's Included</h3>
-            <ul>
-              <li>Initial consultation</li>
-              <li>Review of one existing reporting or data-processing workflow</li>
-              <li>Identification of manual tasks, bottlenecks, and inefficiencies</li>
-              <li>Practical recommendations for improving the workflow</li>
-              <li>Written summary with prioritized next steps</li>
-            </ul>
-            <h3>Deliverable</h3>
-            <p>A concise workflow assessment document identifying opportunities for reporting improvements and automation.</p>
-            <h3>Scope Limitations</h3>
-            <p>The Starter package covers the assessment of one defined workflow.</p>
-            <p>It does not include implementing automation, building dashboards, integrating software systems, or developing custom applications.</p>
-          </div>
+          <ul class="package-features" aria-label="Starter included features">
+            <li>Workflow review</li>
+            <li>Identify bottlenecks</li>
+            <li>Prioritized action plan</li>
+          </ul>
           <a class="button package-card__cta" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=GGecEZ1ooE-CV9hMJvhLzZv19ZxVT5dDptdiPP7dbhNUQk1MN0dNSk5HUDhYQlk5OERJNkY2MzJYVC4u" target="_blank" rel="noopener noreferrer" aria-label="Get Started with Starter — inquiry form opens in a new tab">Get Started</a>
         </article>
 
+        <!-- Internal scoping terms, unchanged: GROWTH includes up to 20 consulting hours, subject to agreed scope. The Growth package covers one defined workflow that can reasonably be completed within the included consulting hours. Complex enterprise integrations, large-scale data migrations, ongoing maintenance, and additional workflows are outside the standard package. -->
         <article class="package-card" aria-labelledby="growth-title">
           <div class="package-card__intro">
             <p class="eyebrow">GROWTH</p>
             <h2 id="growth-title">Reporting Automation</h2>
             <p class="package-price"><strong>$1,200</strong> <span>one-time</span></p>
-            <p class="package-hours">Includes up to 20 consulting hours</p>
-            <p>Reduce repetitive reporting work with a practical, automated data-processing solution.</p>
+            <p class="package-benefit">Spend less time on repetitive reports.</p>
           </div>
-          <div class="package-card__details">
-            <h3>What's Included</h3>
-            <ul>
-              <li>Initial project scoping discussion</li>
-              <li>Review of one existing reporting workflow</li>
-              <li>Data cleaning and transformation</li>
-              <li>Implementation of one clearly defined reporting automation</li>
-              <li>Basic testing and validation</li>
-              <li>Documentation and client handoff</li>
-            </ul>
-            <h3>Deliverable</h3>
-            <p>One working, documented reporting automation solution.</p>
-            <h3>Examples May Include</h3>
-            <ul>
-              <li>Automating repetitive spreadsheet processing</li>
-              <li>Combining structured data files</li>
-              <li>Preparing recurring operational reports</li>
-              <li>Creating a repeatable Python-based data transformation workflow</li>
-            </ul>
-            <h3>Scope Limitations</h3>
-            <p>The Growth package covers one defined workflow that can reasonably be completed within the included consulting hours.</p>
-            <p>Complex enterprise integrations, large-scale data migrations, ongoing maintenance, and additional workflows are outside the standard package.</p>
-          </div>
+          <ul class="package-features" aria-label="Growth included features">
+            <li>Data cleanup</li>
+            <li>One reporting automation</li>
+            <li>Testing and handoff</li>
+          </ul>
           <a class="button package-card__cta" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=GGecEZ1ooE-CV9hMJvhLzZv19ZxVT5dDptdiPP7dbhNUQk1MN0dNSk5HUDhYQlk5OERJNkY2MzJYVC4u" target="_blank" rel="noopener noreferrer" aria-label="Get Started with Growth — inquiry form opens in a new tab">Get Started</a>
         </article>
 
+        <!-- Internal scoping terms, unchanged: ADVANCED includes up to 40 consulting hours, subject to agreed scope. The Advanced package covers one clearly defined analytical objective. It does not promise unlimited dashboards, multiple independent forecasting models, enterprise-scale integrations, or ongoing analytics support. The specific deliverable must be agreed upon before work begins. -->
         <article class="package-card" aria-labelledby="advanced-title">
           <div class="package-card__intro">
             <p class="eyebrow">ADVANCED</p>
             <h2 id="advanced-title">Analytics &amp; Forecasting</h2>
             <p class="package-price"><strong>$2,400</strong> <span>one-time</span></p>
-            <p class="package-hours">Includes up to 40 consulting hours</p>
-            <p>Turn operational and business data into useful insights, performance measures, and forecasts.</p>
+            <p class="package-benefit">Make better decisions with your data.</p>
           </div>
-          <div class="package-card__details">
-            <h3>What's Included</h3>
-            <ul>
-              <li>Initial project scoping and objectives</li>
-              <li>Data exploration and preparation</li>
-              <li>Development of one agreed-upon analytics deliverable</li>
-              <li>Dashboard, statistical analysis, or forecasting model, depending on scope</li>
-              <li>Findings and practical recommendations</li>
-              <li>Documentation and client handoff</li>
-            </ul>
-            <h3>Deliverable</h3>
-            <p>One defined analytics solution with supporting documentation.</p>
-            <h3>Examples May Include</h3>
-            <ul>
-              <li>Customer or revenue trend analysis</li>
-              <li>Operational KPI reporting</li>
-              <li>Forecasting using historical business data</li>
-              <li>Performance analysis and visualization</li>
-              <li>Business intelligence dashboards</li>
-            </ul>
-            <h3>Scope Limitations</h3>
-            <p>The Advanced package covers one clearly defined analytical objective.</p>
-            <p>It does not promise unlimited dashboards, multiple independent forecasting models, enterprise-scale integrations, or ongoing analytics support. The specific deliverable must be agreed upon before work begins.</p>
-          </div>
+          <ul class="package-features" aria-label="Advanced included features">
+            <li>Data analysis</li>
+            <li>Dashboard or forecast</li>
+            <li>Findings and handoff</li>
+          </ul>
           <a class="button package-card__cta" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=GGecEZ1ooE-CV9hMJvhLzZv19ZxVT5dDptdiPP7dbhNUQk1MN0dNSk5HUDhYQlk5OERJNkY2MzJYVC4u" target="_blank" rel="noopener noreferrer" aria-label="Get Started with Advanced — inquiry form opens in a new tab">Get Started</a>
         </article>
       </div>
-      <p class="package-disclosure">All packages are one-time consulting engagements, not subscriptions. Package pricing applies to the defined scope and included consulting-hour limits. Project requirements are reviewed and agreed upon before work begins. Additional services, expanded scope, or work beyond the included hours require a separate written agreement. Submitting an inquiry does not create a payment obligation or consulting agreement.</p>
-      <p class="package-inquiry-note">Inquiry forms open in a new tab. Select your desired package within the form.</p>
+      <!-- Internal engagement terms, unchanged: All packages are one-time consulting engagements, not subscriptions. Package pricing applies to the defined scope and included consulting-hour limits. Project requirements are reviewed and agreed upon before work begins. Additional services, expanded scope, or work beyond the included hours require a separate written agreement. Submitting an inquiry does not create a payment obligation or consulting agreement. -->
+      <p class="package-disclosure">All packages are one-time engagements for a defined scope. We'll confirm project requirements and deliverables before work begins. Additional work is quoted separately.</p>
+
+      <section class="package-examples" aria-labelledby="examples-title">
+        <h2 id="examples-title">Examples of Projects We Can Help With</h2>
+        <p>Examples illustrate possible projects, not guaranteed deliverables or additional services included in every engagement.</p>
+        <div class="package-examples__grid">
+          <div><h3>Starter</h3><ul><li>Review a manual monthly reporting process</li><li>Identify inefficiencies in spreadsheet workflows</li><li>Evaluate opportunities for automation</li></ul></div>
+          <div><h3>Growth</h3><ul><li>Automate a recurring Excel report</li><li>Combine data from multiple CSV files</li><li>Create a repeatable data-cleaning workflow</li></ul></div>
+          <div><h3>Advanced</h3><ul><li>Build an operational KPI dashboard</li><li>Analyze customer or revenue trends</li><li>Develop a forecasting model using historical data</li></ul></div>
+        </div>
+      </section>
     </section>
 
     <section class="section custom-consulting" aria-labelledby="custom-title">
       <div class="container split">
         <div>
           <p class="eyebrow">CUSTOM CONSULTING</p>
-          <h2 id="custom-title">Need Something More Specialized?</h2>
-          <p>Schleiger Analytics also provides custom consulting for larger data integration, reporting, automation, and analytics projects.</p>
-          <p>Whether your organization needs an expanded implementation, ongoing analytical support, or a solution that doesn't fit one of our standard packages, we can discuss a project tailored to your needs.</p>
+          <h2 id="custom-title">Need Something Different?</h2>
+          <p>Have a larger project or a challenge that doesn't fit these packages? Let's discuss a custom solution.</p>
         </div>
         <div class="callout">
-          <p class="eyebrow">FLEXIBLE SCOPE</p>
-          <h3>Custom Consulting — Starting at $60/hour</h3>
-          <p>Custom projects are quoted based on their requirements and scope.</p>
+          <h3>Custom consulting starting at $60/hour</h3>
           <a class="button" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=GGecEZ1ooE-CV9hMJvhLzZv19ZxVT5dDptdiPP7dbhNUQk1MN0dNSk5HUDhYQlk5OERJNkY2MzJYVC4u" target="_blank" rel="noopener noreferrer" aria-label="Request a Custom Quote — inquiry form opens in a new tab">Request a Custom Quote</a>
         </div>
       </div>
