@@ -11,7 +11,8 @@
   <link rel="icon" type="image/png" href="assets/images/schleiger-analytics-logo.png">
   <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class="portfolio-page">
+  <a class="portfolio-skip-link" href="#main-content">Skip to portfolio</a>
   <header>
     <div class="nav container">
       <a class="brand" href="index.html"><img class="site-logo" src="assets/images/schleiger-analytics-logo.png" alt="Schleiger Analytics logo"><span>Schleiger Analytics</span></a>
@@ -20,7 +21,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="page-head portfolio-hero">
       <div class="container">
         <p class="eyebrow">UTILITY &amp; TELECOM ANALYTICS</p>
@@ -38,6 +39,22 @@
         <p class="eyebrow">SELECTED WORK</p>
         <h2>Analytics built around operational reality.</h2>
         <p class="section-intro">Examples of analytics solutions developed around real operational, customer, and reporting challenges.</p>
+        <article class="portfolio-feature" aria-labelledby="ercot-project-title">
+          <div class="portfolio-feature__copy">
+            <p class="eyebrow">FEATURED INTERACTIVE PROJECT</p>
+            <h3 id="ercot-project-title">ERCOT Grid Demand Explorer</h3>
+            <p class="portfolio-feature__lead">From validated load data to operational insight.</p>
+            <p>Explore seasonal demand patterns, compare regional loads, and examine when different weather zones reach their peaks. This public demonstration connects reliable data engineering with the questions utility operations and planning teams need to answer.</p>
+            <a class="button" href="/projects/ercot/index.html">Explore Dashboard <span aria-hidden="true">→</span></a>
+            <p class="portfolio-feature__note">Historical analysis · Initial coverage: January–September 2026 · Not live demand data</p>
+          </div>
+          <div class="portfolio-feature__support">
+            <h4>Reliable data. Clearer decisions.</h4>
+            <p>A validated pipeline turns ERCOT load records into versioned datasets. Interactive charts and transparent coverage checks make the resulting analytics easier to interpret.</p>
+            <ul class="portfolio-tags" aria-label="ERCOT project technologies"><li>Python</li><li>PostgreSQL</li><li>JavaScript</li><li>Chart.js</li><li>AWS S3</li><li>CloudFront</li></ul>
+            <p class="portfolio-feature__scope">System demand · Weather-zone comparisons · Peak timing · Data quality</p>
+          </div>
+        </article>
       </div>
     </section>
 
