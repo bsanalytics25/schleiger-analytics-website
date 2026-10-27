@@ -1,0 +1,140 @@
+/* ERCOT dashboard shell. All rules are scoped to this page. */
+.ercot-page .ercot-skip-link { position: fixed; top: .5rem; left: 1rem; z-index: 10; padding: .65rem 1rem; transform: translateY(-160%); border-radius: 6px; color: #fff; background: var(--navy); }
+.ercot-page .ercot-skip-link:focus { transform: translateY(0); }
+.ercot-page :focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+.ercot-page .ercot-skip-link:focus-visible { outline-color: #fff; box-shadow: 0 0 0 5px var(--blue); }
+.ercot-page #main-content { scroll-margin-top: 5rem; }
+.ercot-page .ercot-intro { padding: 2rem 0 3.5rem; }
+.ercot-page .ercot-intro h1 { max-width: 920px; }
+.ercot-page .ercot-intro > .container > p { max-width: 760px; }
+.ercot-page .ercot-breadcrumb { margin-bottom: 2rem; color: var(--slate); font-size: .88rem; }
+.ercot-page .ercot-breadcrumb ol { display: flex; flex-wrap: wrap; gap: .4rem .7rem; margin: 0; padding: 0; list-style: none; }
+.ercot-page .ercot-breadcrumb li + li::before { margin-right: .7rem; content: "/"; }
+.ercot-page .ercot-breadcrumb a, .ercot-page .ercot-back-link { color: var(--blue); text-underline-offset: .2em; }
+.ercot-page .ercot-intro .ercot-preview-note { margin: 1.5rem 0 0; padding: 1rem 1.2rem; border-left: 3px solid var(--blue); color: var(--navy); background: #fff; font-size: .95rem; }
+.ercot-page .ercot-dashboard { display: grid; gap: 2rem; padding-top: 2.5rem; padding-bottom: 4rem; }
+.ercot-page .ercot-dashboard > *, .ercot-page .ercot-comparison-grid > *, .ercot-page .ercot-kpi-grid > * { min-width: 0; }
+.ercot-page .ercot-panel, .ercot-page .ercot-kpi { padding: 1.75rem; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.ercot-page .ercot-panel-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.ercot-page .ercot-panel h2 { font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
+.ercot-page .ercot-panel p, .ercot-page .ercot-section-heading > p:last-child, .ercot-page .ercot-kpi > p:last-child { color: var(--slate); }
+.ercot-page .ercot-panel .eyebrow, .ercot-page .ercot-section-heading .eyebrow { margin: 0 0 .65rem; color: var(--blue); }
+.ercot-page .ercot-badge { display: inline-block; padding: .3rem .65rem; border: 1px solid var(--line); border-radius: 999px; color: var(--slate); background: #f8fafc; font-size: .75rem; font-weight: 700; }
+.ercot-page .ercot-status-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line); }
+.ercot-page .ercot-status-grid dt { margin: 0 0 .35rem; }
+.ercot-page .ercot-status-grid dd { margin: 0; }
+.ercot-page .ercot-section-heading { margin-bottom: 1.25rem; }
+.ercot-page .ercot-section-heading > p:last-child { margin: .75rem 0 0; }
+.ercot-page .ercot-kpi-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.ercot-page .ercot-kpi { border-top: 3px solid var(--blue); }
+.ercot-page .ercot-kpi h3 { margin: 0; color: var(--navy); font-size: 1rem; }
+.ercot-page .ercot-kpi .ercot-kpi-value { margin: 1rem 0 .5rem; color: var(--slate); font-size: 1.25rem; font-weight: 700; }
+.ercot-page .ercot-kpi > p:last-child { margin: 0; font-size: .88rem; }
+.ercot-page .ercot-comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.ercot-page .ercot-chart-placeholder { display: flex; min-height: 240px; flex-direction: column; align-items: center; justify-content: center; gap: .6rem; padding: 2rem 1.5rem; border: 1px dashed #b9c8d4; border-radius: 6px; background: #f8fafc; text-align: center; }
+.ercot-page .ercot-chart-placeholder p { margin: 0; color: var(--navy); font-weight: 700; }
+.ercot-page .ercot-chart-placeholder span { max-width: 440px; color: var(--slate); font-size: .9rem; }
+.ercot-page .ercot-panel .ercot-panel-note { margin: 1rem 0 0; font-size: .85rem; }
+.ercot-page .ercot-methodology-intro { max-width: 800px; }
+.ercot-page .ercot-method-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2.5rem; margin-top: 1.5rem; }
+.ercot-page .ercot-method-grid h3 { margin: 0; color: var(--navy); font-size: 1rem; }
+.ercot-page .ercot-method-grid p { margin: .5rem 0 0; }
+.ercot-page .ercot-back-link { display: inline-block; margin-top: 2rem; font-weight: 700; }
+@media (max-width: 960px) {
+  .ercot-page .nav { flex-wrap: wrap; justify-content: space-between; }
+  .ercot-page .menu { display: block; min-height: 44px; padding: .4rem .65rem; border: 1px solid var(--line); border-radius: 6px; background: #fff; font: inherit; font-weight: 700; }
+  .ercot-page .nav nav { display: none; width: 100%; flex-direction: column; gap: .55rem; margin-left: 0; padding: .7rem 0 1rem; }
+  .ercot-page .nav nav.open { display: flex; }
+  .ercot-page .nav nav a { padding: .3rem 0; }
+  .ercot-page .ercot-status-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ercot-page .ercot-comparison-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .ercot-page .ercot-intro { padding: 1.5rem 0 2.5rem; }
+  .ercot-page .ercot-breadcrumb { margin-bottom: 1.5rem; }
+  .ercot-page .ercot-dashboard { gap: 1.5rem; padding-top: 1.5rem; padding-bottom: 2.5rem; }
+  .ercot-page .ercot-panel, .ercot-page .ercot-kpi { padding: 1.25rem; }
+  .ercot-page .ercot-kpi-grid, .ercot-page .ercot-method-grid { grid-template-columns: 1fr; }
+  .ercot-page .ercot-comparison-grid { gap: 1.5rem; }
+  .ercot-page .ercot-chart-placeholder { min-height: 190px; padding: 1.5rem 1rem; }
+}
+@media (max-width: 400px) {
+  .ercot-page .brand { gap: .4rem; font-size: .85rem; }
+  .ercot-page .ercot-status-grid { grid-template-columns: 1fr; }
+}
+
+/* Phase 2: summary status, accessible coverage details and retry. */
+.ercot-page [hidden] { display: none !important; }
+.ercot-page .ercot-status-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ercot-page .ercot-kpi-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ercot-page .ercot-kpi, .ercot-page .ercot-status-grid dd { overflow-wrap: anywhere; }
+.ercot-page .ercot-retry { min-height: 44px; margin: 0 0 .75rem; font: inherit; font-weight: 700; }
+.ercot-page .ercot-retry:disabled { opacity: .65; cursor: wait; }
+.ercot-page .ercot-badge[data-quality="incomplete"], .ercot-page .ercot-badge[data-quality="empty"] { color: #704000; border-color: #dfc28e; background: #fff7e8; }
+.ercot-page #ercot-coverage-details { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.ercot-page #ercot-coverage-details summary { padding: .5rem 0; color: var(--navy); font-weight: 700; cursor: pointer; }
+.ercot-page .ercot-table-scroll { max-width: 100%; overflow-x: auto; }
+.ercot-page .ercot-coverage-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.ercot-page .ercot-coverage-table caption { padding: 0 0 .75rem; color: var(--slate); text-align: left; }
+.ercot-page .ercot-coverage-table th, .ercot-page .ercot-coverage-table td { padding: .65rem .75rem; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.ercot-page .ercot-coverage-table th:first-child { text-align: left; }
+.ercot-page .ercot-coverage-table thead { color: var(--navy); background: var(--sky); }
+@media (max-width: 960px) {
+  .ercot-page .ercot-status-grid, .ercot-page .ercot-kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .ercot-page .ercot-kpi-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 400px) {
+  .ercot-page .ercot-status-grid { grid-template-columns: 1fr; }
+}
+
+/* Phase 3: responsive system charts and keyboard-accessible controls/tables. */
+.ercot-page .ercot-chart-controls { margin: 1.25rem 0; padding: 0; border: 0; }
+.ercot-page .ercot-chart-controls fieldset { min-width: 0; padding: 0; border: 0; }
+.ercot-page .ercot-chart-controls legend { margin-bottom: .5rem; color: var(--navy); font-weight: 700; }
+.ercot-page .ercot-control-row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: .8rem; }
+.ercot-page .ercot-chart-controls label { display: grid; gap: .35rem; margin: 0; font-size: .9rem; }
+.ercot-page .ercot-chart-controls input, .ercot-page .ercot-chart-controls select { min-width: 0; max-width: 100%; min-height: 44px; padding: .65rem; border: 1px solid #b9c8d4; border-radius: 6px; background: #fff; color: var(--navy); font: inherit; }
+.ercot-page .ercot-chart-controls .button, .ercot-page .ercot-chart-retry { min-height: 44px; margin-top: 0; font: inherit; font-weight: 700; }
+.ercot-page .ercot-chart-controls .ercot-checkbox { display: flex; align-items: center; gap: .6rem; margin-top: .75rem; }
+.ercot-page .ercot-chart-controls input[type="checkbox"] { width: 20px; min-height: 24px; margin: 0; accent-color: var(--blue); }
+.ercot-page .ercot-chart-controls:disabled, .ercot-page .ercot-chart-controls fieldset:disabled { opacity: .65; }
+.ercot-page .ercot-chart-frame { position: relative; width: 100%; min-width: 0; height: 340px; margin-top: 1.5rem; }
+.ercot-page .ercot-chart-table { margin-top: 1rem; }
+.ercot-page .ercot-chart-table summary { padding: .5rem 0; color: var(--navy); cursor: pointer; font-weight: 700; }
+.ercot-page .ercot-chart-table-scroll { max-height: 25rem; overflow: auto; }
+.ercot-page .ercot-chart-table td:last-child { min-width: 10rem; max-width: 24rem; white-space: normal; text-align: left; }
+.ercot-page .ercot-panel .ercot-filter-error { color: #8b2d1c; }
+@media (max-width: 760px) {
+  .ercot-page .ercot-chart-frame { height: 290px; }
+  .ercot-page .ercot-control-row { align-items: stretch; }
+  .ercot-page .ercot-control-row label { flex: 1 1 140px; }
+  .ercot-page .ercot-control-row .button { flex: 1 1 100%; }
+}
+
+/* Phase 4: weather-zone controls, disclosure and sortable peak table. */
+.ercot-page .ercot-zone-controls .ercot-control-row label { flex: 1 1 180px; }
+.ercot-page .ercot-zone-controls .ercot-control-row + .ercot-control-row { margin-top: 1rem; }
+.ercot-page .ercot-zone-bars { height: 380px; }
+.ercot-page .ercot-zone-disclosure > summary { color: var(--navy); font-size: 1.2rem; font-weight: 800; cursor: pointer; }
+.ercot-page .ercot-zone-disclosure > summary span { display: block; margin-top: .5rem; color: var(--slate); font-size: .95rem; font-weight: 400; }
+.ercot-page .ercot-zone-disclosure[open] > summary { margin-bottom: 1.75rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
+.ercot-page .ercot-zone-peak-table button { min-height: 44px; padding: .35rem .45rem; border: 1px solid var(--line); border-radius: 4px; color: var(--navy); background: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.ercot-page .ercot-zone-peak-table [aria-sort="ascending"] button::after { content: " ↑"; }
+.ercot-page .ercot-zone-peak-table [aria-sort="descending"] button::after { content: " ↓"; }
+.ercot-page .ercot-zone-peak-table td:last-child { min-width: 15rem; max-width: 34rem; white-space: normal; text-align: left; }
+@media (max-width: 760px) {
+  .ercot-page .ercot-zone-bars { height: 360px; }
+  .ercot-page .ercot-zone-controls .ercot-control-row label { flex-basis: 100%; }
+}
+
+/* Phase 5: orientation, readable status and stronger control boundaries. */
+.ercot-page .ercot-section-nav { display: flex; flex-wrap: wrap; gap: .5rem .75rem; margin-top: 1.5rem; }
+.ercot-page .ercot-section-nav a { display: inline-flex; align-items: center; min-height: 44px; padding: .4rem .7rem; border: 1px solid #718597; border-radius: 6px; color: var(--navy); background: #fff; font-size: .9rem; font-weight: 700; text-decoration: none; }
+.ercot-page .ercot-section-nav a:hover { color: var(--blue); text-decoration: underline; text-underline-offset: .2em; }
+.ercot-page .ercot-dashboard section[id], .ercot-page .ercot-dashboard h2[id] { scroll-margin-top: 5.5rem; }
+.ercot-page .ercot-panel [role="status"] { font-size: .9rem; }
+.ercot-page .ercot-chart-controls input, .ercot-page .ercot-chart-controls select, .ercot-page .menu, .ercot-page .ercot-zone-peak-table button { border-color: #718597; }
+.ercot-page .ercot-source-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1.5rem; }
+.ercot-page .ercot-source-links a { min-height: 44px; padding: .4rem 0; color: var(--blue); text-underline-offset: .2em; }
