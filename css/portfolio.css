@@ -37,7 +37,6 @@
 .portfolio-cta > .container { max-width: 820px; }
 .portfolio-cta h2 { max-width: 720px; color: #fff; }
 .portfolio-cta p { max-width: 720px; margin: 1rem 0 0; color: #d8e6f0; }
-.portfolio-cta .eyebrow { color: #9ed8ff; }
 .portfolio-cta .button { background: #fff; border-color: #fff; color: var(--navy); }
 .portfolio-cta .button:hover { background: #d8e6f0; border-color: #d8e6f0; }
 
@@ -55,7 +54,6 @@
 /* Featured interactive portfolio project; other site pages keep their styles. */
 .portfolio-page .portfolio-feature { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 2.5rem; margin-top: 2rem; padding: 2rem; border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 10px; background: #fff; }
 .portfolio-page .portfolio-feature > * { min-width: 0; }
-.portfolio-page .portfolio-feature .eyebrow { margin: 0 0 .75rem; }
 .portfolio-page .portfolio-feature h3 { margin: 0; color: var(--navy); font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.2; }
 .portfolio-page .portfolio-feature__lead { margin: .75rem 0; color: var(--navy); font-size: 1.1rem; font-weight: 700; }
 .portfolio-page .portfolio-feature p { color: var(--slate); }

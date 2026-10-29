@@ -27,7 +27,6 @@
     <section class="page-head ercot-intro" aria-labelledby="dashboard-title">
       <div class="container">
         <nav class="ercot-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="../../portfolio.html">Portfolio</a></li><li aria-current="page">ERCOT Grid Demand Explorer</li></ol></nav>
-        <p class="eyebrow">UTILITY OPERATIONS ANALYTICS</p>
         <h1 id="dashboard-title">ERCOT Grid Demand Explorer</h1>
         <p>Understand seasonal demand, compare regional loads, and put peak timing in context—with the data coverage visible alongside every conclusion.</p>
         <p class="ercot-preview-note"><strong>Historical portfolio demonstration.</strong> Start with system trends, compare weather zones, then examine each zone's peak. This is historical analysis, not live grid monitoring. The published coverage period is shown below.</p>
@@ -37,7 +36,7 @@
 
     <div class="container ercot-dashboard">
       <section class="ercot-panel ercot-status" aria-labelledby="dataset-title" aria-busy="false">
-        <div class="ercot-panel-heading"><div><p class="eyebrow">DATASET STATUS</p><h2 id="dataset-title">Coverage &amp; freshness</h2></div><span class="ercot-badge" id="ercot-status-badge">Awaiting summary</span></div>
+        <div class="ercot-panel-heading"><div><h2 id="dataset-title">Coverage &amp; freshness</h2></div><span class="ercot-badge" id="ercot-status-badge">Awaiting summary</span></div>
         <p id="ercot-load-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1">Dataset status requires JavaScript.</p>
         <button class="button ercot-retry" id="ercot-retry" type="button" hidden>Retry loading summary</button>
         <p id="ercot-dataset-note">The measurement coverage, reporting period, and export timestamp will be shown separately. A recent export does not imply recent measurements.</p>
@@ -63,7 +62,7 @@
       </section>
 
       <section aria-labelledby="overview-title">
-        <div class="ercot-section-heading"><p class="eyebrow">AT A GLANCE</p><h2 id="overview-title">System overview</h2><p>Headline indicators for the published reporting period.</p></div>
+        <div class="ercot-section-heading"><h2 id="overview-title">System overview</h2><p>Headline indicators for the published reporting period.</p></div>
         <div class="ercot-kpi-grid">
           <article class="ercot-kpi" aria-labelledby="peak-kpi"><h3 id="peak-kpi">Reporting-period system peak</h3><p class="ercot-kpi-value" id="ercot-peak-demand">Unavailable</p><p>Highest observed system demand in the published reporting period; not an all-time record.</p></article>
           <article class="ercot-kpi" aria-labelledby="timing-kpi"><h3 id="timing-kpi">System peak timing</h3><p class="ercot-kpi-value" id="ercot-peak-date">Unavailable</p><p id="ercot-peak-hour">Reporting date and local hour ending will appear with the summary.</p></article>
@@ -73,7 +72,7 @@
       </section>
 
       <section class="ercot-panel" id="ercot-daily-panel" tabindex="-1" aria-labelledby="daily-title" aria-busy="false">
-        <div class="ercot-panel-heading"><div><p class="eyebrow">SYSTEM DEMAND</p><h2 id="daily-title">Daily demand trends</h2></div><span class="ercot-badge">Awaiting report</span></div>
+        <div class="ercot-panel-heading"><div><h2 id="daily-title">Daily demand trends</h2></div><span class="ercot-badge">Awaiting report</span></div>
         <p id="ercot-daily-description">Average and peak daily system demand in MW, with optional minimum demand. Missing dates appear as gaps. Triangles mark mismatched observation counts; consult the dataset audit even when counts match.</p>
         <p id="ercot-daily-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1">JavaScript is required to load daily demand.</p>
         <button class="button ercot-chart-retry" type="button" hidden>Retry daily chart</button>
@@ -101,7 +100,7 @@
 
       <div class="ercot-comparison-grid">
         <section class="ercot-panel" id="ercot-monthly-panel" tabindex="-1" aria-labelledby="monthly-title" aria-busy="false">
-          <div class="ercot-panel-heading"><div><p class="eyebrow">SEASONAL PATTERNS</p><h2 id="monthly-title">Monthly comparisons</h2></div><span class="ercot-badge">Awaiting report</span></div>
+          <div class="ercot-panel-heading"><div><h2 id="monthly-title">Monthly comparisons</h2></div><span class="ercot-badge">Awaiting report</span></div>
           <p id="ercot-monthly-description">Published system monthly aggregates. Select average demand (MW), peak demand (MW), or observed total energy (MWh). These values are independent of the daily date filter.</p>
           <p id="ercot-monthly-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1">JavaScript is required to load monthly comparisons.</p>
           <button class="button ercot-chart-retry" type="button" hidden>Retry monthly chart</button>
@@ -120,7 +119,7 @@
         </section>
 
         <section class="ercot-panel" id="ercot-zone-monthly-panel" tabindex="-1" aria-labelledby="zones-title" aria-busy="false">
-          <div class="ercot-panel-heading"><div><p class="eyebrow">REGIONAL DEMAND</p><h2 id="zones-title">Monthly weather-zone comparisons</h2></div><span class="ercot-badge">Awaiting report</span></div>
+          <div class="ercot-panel-heading"><div><h2 id="zones-title">Monthly weather-zone comparisons</h2></div><span class="ercot-badge">Awaiting report</span></div>
           <p id="ercot-zone-monthly-description">Compare selected ERCOT weather zones for one published reporting month. Demand is in MW and observed energy in MWh. Missing zones remain unavailable.</p>
           <p id="ercot-zone-monthly-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1">JavaScript is required to load monthly weather-zone comparisons.</p>
           <button class="button ercot-zone-retry" type="button" hidden>Retry monthly zone chart</button>
@@ -145,7 +144,7 @@
       <details class="ercot-panel ercot-zone-disclosure" id="ercot-zone-daily-explorer">
         <summary>Daily weather-zone explorer<span>Choose one zone or compare two zones over a daily date range.</span></summary>
         <section id="ercot-zone-daily-panel" aria-labelledby="zone-daily-title" aria-busy="false">
-          <div class="ercot-panel-heading"><div><p class="eyebrow">REGIONAL TRENDS</p><h2 id="zone-daily-title">Daily weather-zone demand</h2></div><span class="ercot-badge">Open explorer to load</span></div>
+          <div class="ercot-panel-heading"><div><h2 id="zone-daily-title">Daily weather-zone demand</h2></div><span class="ercot-badge">Open explorer to load</span></div>
           <p id="ercot-zone-daily-description">Daily average and peak demand in MW for up to two zones. Missing zone-days appear as gaps, never zero demand. Triangles mark count mismatches; consult the dataset audit even when counts match.</p>
           <p id="ercot-zone-daily-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1">Open this explorer to load daily weather-zone data.</p>
           <button class="button ercot-zone-retry" type="button" hidden>Retry daily zone chart</button>
@@ -175,7 +174,7 @@
         </section>
       </details>
       <section class="ercot-panel" id="ercot-zone-peaks-panel" tabindex="-1" aria-labelledby="zone-peaks-title" aria-busy="false">
-        <div class="ercot-panel-heading"><div><p class="eyebrow">ZONE STATISTICS</p><h2 id="zone-peaks-title">Reporting-period zone peaks</h2></div><span class="ercot-badge">Awaiting summary</span></div>
+        <div class="ercot-panel-heading"><div><h2 id="zone-peaks-title">Reporting-period zone peaks</h2></div><span class="ercot-badge">Awaiting summary</span></div>
         <p id="ercot-zone-peaks-description">Each zone's highest observed demand within the published reporting period. Zone peaks occur at different times. Do not add these independent peaks together; their sum does not represent the ERCOT system peak.</p>
         <p class="ercot-zone-peak-period">The reporting period will appear with the summary.</p>
         <p id="ercot-zone-peaks-status" role="status" aria-live="polite" aria-atomic="true" tabindex="-1">JavaScript is required to load reporting-period zone peaks.</p>
@@ -191,7 +190,6 @@
       </section>
 
       <section class="ercot-panel ercot-methodology" id="ercot-methodology" tabindex="-1" aria-labelledby="methodology-title">
-        <p class="eyebrow">BEHIND THE DASHBOARD</p>
         <h2 id="methodology-title">Methodology &amp; data notes</h2>
         <p class="ercot-methodology-intro">A public demonstration of data engineering and operational analytics, using ERCOT native hourly load data. The initial portfolio dataset covers January–September 2026; the validated dataset status above shows the current published measurement extent.</p>
         <div class="ercot-method-grid">
