@@ -24,7 +24,7 @@ aside p {
 }
 
 /* The mission paragraph is followed by additional callout content. */
-.callout > p:not(.eyebrow) {
+.callout > p {
   color: #d8e6f0;
 }
 
@@ -42,10 +42,13 @@ aside p {
   border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
-.capabilities .eyebrow,
-.engagement-style .eyebrow,
-.typical-outcomes .eyebrow {
-  margin-bottom: .6rem;
+.capabilities h3,
+.engagement-style h3,
+.typical-outcomes h3 {
+  margin: 0 0 .6rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 .capabilities ul,
