@@ -21,7 +21,7 @@
 .home-challenge__grid > p { max-width: 610px; margin: 0; color: var(--slate); font-size: 1.1rem; }
 .home-section-head { max-width: 720px; margin-bottom: 2rem; }
 .home-section-head p { color: var(--slate); }
-.home-markets .market-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.home-markets .market-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .home-capabilities { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; }
 .capability-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .capability-card { min-height: 100%; padding: 1.5rem; border: 1px solid var(--line); border-radius: 10px; background: #f8fafc; }
