@@ -10,6 +10,10 @@
 .market-card a { color: var(--blue); font-weight: 700; }
 .market-card[id] { scroll-margin-top: 6rem; }
 .service-cards { margin: 2rem 0; }
+.service-primary-market { margin-top: 2rem; }
+.service-business { scroll-margin-top: 6rem; }
+.service-business > p { color: var(--slate); }
+.service-business > p a { color: var(--blue); font-weight: 700; }
 .service-markets,.service-contact { background: var(--sky); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .delivery-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; margin: 2rem 0 0; padding-left: 1.5rem; }
 .delivery-steps li { padding-left: .25rem; }

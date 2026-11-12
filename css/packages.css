@@ -1,45 +1,57 @@
-/* Package pricing components; shared branding and typography remain unchanged. */
-.packages-page .page-head { padding: 3rem 0 2rem; }
-.packages-page .section { padding: 3rem 0; }
+/* Engagement page styles; shared branding and navigation remain unchanged. */
+.packages-page .page-head { padding: 4rem 0 3rem; }
+.packages-page .page-head h1 { max-width: 850px; }
+.packages-page .page-head p { max-width: 740px; color: var(--slate); }
+.packages-page .page-head > .container > p:not(.engagement-eyebrow):not(.engagement-intro-note) { font-size: 1.15rem; }
+.packages-page .section { padding: 3.5rem 0; }
+.packages-page .engagement-eyebrow { margin: 0 0 .9rem; color: var(--blue); font-size: .8rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.packages-page .engagement-intro-note { font-size: .92rem; }
+.engagement-section-head { max-width: 800px; margin-bottom: 2rem; }
+.engagement-section-head > p:not(.engagement-eyebrow) { color: var(--slate); }
+.engagement-capabilities { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
+.engagement-capabilities article { min-width: 0; border-top: 3px solid var(--blue); padding-top: 1.25rem; }
+.packages-page h3 { margin: 0; color: var(--navy); font-size: 1.2rem; line-height: 1.35; }
+.engagement-capabilities p { color: var(--slate); }
+.engagement-capabilities .engagement-outcome { color: var(--navy); font-weight: 700; }
+.engagement-combined { margin: 2rem 0 0; padding-top: 1.4rem; border-top: 1px solid var(--line); color: var(--slate); }
+.engagement-options { background: var(--sky); border-block: 1px solid var(--line); }
 .package-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; align-items: stretch; }
 .package-card { display: flex; flex-direction: column; min-width: 0; padding: 1.6rem; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
 .package-card--starter { border-color: var(--blue); box-shadow: inset 0 3px 0 var(--blue); }
-.package-card h2 { font-size: 1.3rem; line-height: 1.3; }
+.package-card h3 { font-size: 1.3rem; }
 .package-card p,.package-card li { color: var(--slate); }
-.package-price { margin: 1.25rem 0 .25rem; }
-.package-price strong { color: var(--navy); font-size: 2.5rem; line-height: 1.2; letter-spacing: -.03em; }
-.package-price span { display: block; font-size: .9rem; }
-.package-card .package-benefit { margin: 1.25rem 0 .75rem; color: var(--navy); font-size: 1.15rem; font-weight: 700; line-height: 1.4; }
+.packages-page .engagement-step { margin: 0 0 .8rem; color: var(--blue); font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.package-card .package-benefit { margin: 1.25rem 0 .75rem; color: var(--navy); font-size: 1.1rem; font-weight: 700; line-height: 1.45; }
 .package-card__intro > p:last-child { margin-bottom: 0; }
-.package-card .package-features { flex: 1; margin: 1.25rem 0 0; padding-left: 1.2rem; }
-.package-card li + li { margin-top: .45rem; }
-.package-card__cta { margin-top: 1.75rem; text-align: center; min-height: 44px; }
-.package-disclosure { margin: 1.5rem 0 0; color: var(--slate); font-size: .95rem; }
-.package-examples { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
-.package-examples h2 { font-size: 1.3rem; }
-.package-examples > p { margin: .75rem 0 1.25rem; color: var(--slate); font-size: .95rem; }
+.package-card .package-features { flex: 1; margin: 1.25rem 0; padding-left: 1.2rem; }
+.package-card li + li { margin-top: .5rem; }
+.package-card .engagement-pricing { margin: 0; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--navy); font-size: .95rem; font-weight: 700; }
+.engagement-starting-price { display: block; margin-bottom: .45rem; font-size: 1.65rem; line-height: 1.25; }
+.package-card .engagement-scope-note { margin: .6rem 0 0; font-size: .9rem; }
+.package-card__cta { margin-top: 1.2rem; text-align: center; min-height: 44px; }
+.package-disclosure { margin: 1.5rem 0 0; color: var(--slate); font-size: .92rem; }
 .package-examples__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
-.package-examples h3 { margin: 0 0 .5rem; color: var(--navy); font-size: 1rem; }
-.package-examples ul { margin: 0; padding-left: 1.2rem; color: var(--slate); font-size: .95rem; }
-.package-examples li + li { margin-top: .35rem; }
+.engagement-examples article { min-width: 0; padding: 1.5rem; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.engagement-examples h3 { font-size: 1.12rem; }
+.engagement-examples p:not(.engagement-step) { color: var(--slate); }
+.engagement-ai-note { margin-top: 2rem; padding: 1.5rem; background: var(--sky); border-left: 3px solid var(--blue); }
+.engagement-ai-note p { margin-bottom: 0; color: var(--slate); }
+.engagement-text-link { color: var(--blue); font-weight: 700; }
 .custom-consulting { border-top: 1px solid var(--line); background: var(--sky); }
 .custom-consulting p { color: var(--slate); }
-.custom-consulting .callout h3 { margin: 0; color: #fff; font-size: 1.3rem; line-height: 1.4; }
+.custom-consulting .callout h3 { color: #fff; font-size: 1.3rem; }
 .custom-consulting .callout p { color: #d8e6f0; }
 .custom-consulting .callout .button { background: #fff; color: var(--navy); min-height: 44px; }
 .packages-skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 3; padding: .75rem 1rem; background: #fff; color: var(--navy); }
 .packages-skip-link:focus { top: 1rem; }
-.package-card__cta:focus-visible,.custom-consulting .button:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+.packages-page a:focus-visible,.packages-page button:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+.packages-page [id] { scroll-margin-top: 6rem; }
 @media (max-width: 1000px) {
-  .package-grid { grid-template-columns: 1fr; max-width: 680px; margin-inline: auto; }
+  .package-grid { grid-template-columns: 1fr; }
+  .package-card { max-width: 720px; width: 100%; margin-inline: auto; }
+  .engagement-capabilities,.package-examples__grid { grid-template-columns: 1fr; gap: 1.5rem; }
 }
 @media (max-width: 760px) {
-  .package-examples__grid { grid-template-columns: 1fr; gap: 1.5rem; }
-}
-
-
-.package-hours { margin: .75rem 0 0; font-size: .95rem; }
-
-@media (min-width: 1001px) {
-  .package-card h2 { min-height: 2.6em; }
+  .packages-page .page-head { padding: 3rem 0 2rem; }
+  .packages-page .section { padding: 2.5rem 0; }
 }
